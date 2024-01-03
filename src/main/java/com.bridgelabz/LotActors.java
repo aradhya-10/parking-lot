@@ -1,5 +1,10 @@
 package com.bridgelabz;
 
-public interface LotActors {
-    boolean getFullStatus(boolean status);
+public class LotActors {
+    boolean getFullStatus(boolean status){
+        return status;
+    };
+    boolean updateFullStatus(boolean status){
+        return status;
+    };
 }

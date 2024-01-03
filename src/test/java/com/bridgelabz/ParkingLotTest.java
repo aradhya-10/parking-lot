@@ -55,4 +55,18 @@ class ParkingLotTest {
         AirportSecurity airportSecurity = new AirportSecurity();
         assertTrue(airportSecurity.getFullStatus(parkingLot.isFull()));
     }
+
+    @Test
+    void givenALot_CheckIfItHasSpace_ReturnIfOwnerStatusUpdated() {
+        Car car3 = new Car("UP32-1275");
+        Car car4 = new Car("UP32-1285");
+
+        LotOwner lotOwner = new LotOwner();
+        parkingLot.parkCar(car3);
+        assertTrue(lotOwner.getFullStatus(parkingLot.isFull()));
+        parkingLot.unparkCar(car3.getLicenseNumber());
+        assertFalse(lotOwner.getFullStatus(parkingLot.isFull()));
+        parkingLot.parkCar(car4);
+        assertTrue(lotOwner.getFullStatus(parkingLot.isFull()));
+    }
 }

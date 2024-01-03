@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="947a65ba-6d9b-4043-a662-889a8f4728c9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com.bridgelabz/AirportSecurity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com.bridgelabz/LotActors.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com.bridgelabz/LotOwner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.bridgelabz/AirportSecurity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.bridgelabz/AirportSecurity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.bridgelabz/LotActors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.bridgelabz/LotActors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.bridgelabz/LotOwner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.bridgelabz/LotOwner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/bridgelabz/ParkingLotTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/bridgelabz/ParkingLotTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +42,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "UC4",
+    "git-widget-placeholder": "UC5",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -56,7 +56,7 @@
       <recent name="D:\GE\parking-lot\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ParkingLotTest.givenALot_CheckIfLotIsFullForSecurity_ReturnBoolean">
+  <component name="RunManager" selected="JUnit.ParkingLotTest.givenALot_CheckIfItHasSpace_ReturnIfOwnerStatusUpdated">
     <configuration name="ParkingLotTest.checkIfLotIsFull_ReturnBoolean" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="parking-lot" />
       <extension name="coverage">
@@ -89,7 +89,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParkingLotTest.givenACar_RemoveFromParkingLot_ReturnHome" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ParkingLotTest.givenALot_CheckIfItHasSpace_ReturnIfOwnerStatusUpdated" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="parking-lot" />
       <extension name="coverage">
         <pattern>
@@ -99,7 +99,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.bridgelabz" />
       <option name="MAIN_CLASS_NAME" value="com.bridgelabz.ParkingLotTest" />
-      <option name="METHOD_NAME" value="givenACar_RemoveFromParkingLot_ReturnHome" />
+      <option name="METHOD_NAME" value="givenALot_CheckIfItHasSpace_ReturnIfOwnerStatusUpdated" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -139,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ParkingLotTest.givenALot_CheckIfItHasSpace_ReturnIfOwnerStatusUpdated" />
         <item itemvalue="JUnit.ParkingLotTest.givenALot_CheckIfLotIsFullForSecurity_ReturnBoolean" />
         <item itemvalue="JUnit.ParkingLotTest.givenALot_CheckIfLotIsFullForOwner_ReturnBoolean" />
         <item itemvalue="JUnit.ParkingLotTest.checkIfLotIsFull_ReturnBoolean" />
         <item itemvalue="JUnit.ParkingLotTest.givenACar_RemoveFromParkingLot_ReturnBoolean" />
-        <item itemvalue="JUnit.ParkingLotTest.givenACar_RemoveFromParkingLot_ReturnHome" />
       </list>
     </recent_temporary>
   </component>

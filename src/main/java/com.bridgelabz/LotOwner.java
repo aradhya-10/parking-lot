@@ -1,8 +1,15 @@
 package com.bridgelabz;
 
-public class LotOwner implements LotActors{
+public class LotOwner extends LotActors{
+    private boolean hasSpace;
+
+    public void setHasSpace(boolean fullStatus){
+        hasSpace = !fullStatus;
+    }
+
     @Override
-    public boolean getFullStatus(boolean fullStatus) {
+    public boolean updateFullStatus(boolean fullStatus) {
+        setHasSpace(fullStatus);
         return fullStatus;
     }
 }

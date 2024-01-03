@@ -1,9 +1,9 @@
 package com.bridgelabz;
 
-public class AirportSecurity implements LotActors{
+public class AirportSecurity extends LotActors{
     @Override
     public boolean getFullStatus(boolean fullStatus) {
-        System.out.println(fullStatus == true ? "Full" : "Not full");
+        System.out.println(fullStatus ? "Full" : "Not full");
         return fullStatus;
     }
 }
