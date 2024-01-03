@@ -8,7 +8,6 @@ public class ParkingLot {
 
     private final List<Car> parkedCars = new ArrayList<>();;
     int capacity;
-    int currCapacity;
 
     public ParkingLot(int capacity) {
         this.capacity = capacity;
@@ -20,7 +19,6 @@ public class ParkingLot {
 
     public void parkCar(Car car) {
         parkedCars.add(car);
-        currCapacity++;
         System.out.println(car.getLicenseNumber() + " is parked.");
     }
 
@@ -30,7 +28,6 @@ public class ParkingLot {
             Car car = iterator.next();
             if (car.getLicenseNumber().equals(licenseNumber)) {
                 iterator.remove();
-                currCapacity--;
                 System.out.println(car.getLicenseNumber() + " has been unparked.");
                 return;
             }
@@ -38,12 +35,16 @@ public class ParkingLot {
         System.out.println("Car " + licenseNumber + " not found.");
     }
 
+    public boolean isFull() {
+        return parkedCars.size() == capacity;
+    }
+
     public int getCapacity(){
         return capacity;
     }
 
     public int getCurrCapacity(){
-        return currCapacity;
+        return parkedCars.size();
     }
 
     public void printParkedCars() {
