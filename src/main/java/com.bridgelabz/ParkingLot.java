@@ -1,6 +1,7 @@
 package com.bridgelabz;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class ParkingLot {
@@ -21,6 +22,20 @@ public class ParkingLot {
         parkedCars.add(car);
         currCapacity++;
         System.out.println(car.getLicenseNumber() + " is parked.");
+    }
+
+    public void unparkCar(String licenseNumber) {
+        Iterator<Car> iterator = parkedCars.iterator();
+        while (iterator.hasNext()) {
+            Car car = iterator.next();
+            if (car.getLicenseNumber().equals(licenseNumber)) {
+                iterator.remove();
+                currCapacity--;
+                System.out.println(car.getLicenseNumber() + " has been unparked.");
+                return;
+            }
+        }
+        System.out.println("Car " + licenseNumber + " not found.");
     }
 
     public int getCapacity(){
